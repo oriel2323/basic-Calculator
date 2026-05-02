@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const previousOperandTextElement = document.getElementById('previous-operand');
     const currentOperandTextElement = document.getElementById('current-operand');
-    
+
     let currentOperand = '0';
     let previousOperand = '';
     let operation = undefined;
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const data = await response.json();
-            
+
             if (response.ok) {
                 currentOperand = data.result.toString();
                 operation = undefined;

@@ -1,6 +1,6 @@
-#Basic calculator in Python 
-#addition
+#Basic calculator functions in Python 
 
+#addition
 def add(a,b):
     return float(a) + float(b)
 
@@ -19,3 +19,12 @@ def div(a,b):
 def mul(a,b):
     return float(a) * float(b)
 
+#power
+def pow(a,b):
+    return float(a) ** float(b)
+
+#root
+def root(a,b):
+    if float(b) == 0:
+        return "Can't compute zeroth root"
+    return float(a) ** (1/float(b))

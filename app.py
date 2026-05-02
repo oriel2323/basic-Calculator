@@ -26,6 +26,10 @@ def calculate():
             result = calculations.mul(num1, num2)
         elif action == "/":
             result = calculations.div(num1, num2)
+        elif action == "**":
+            result = calculations.pow(num1, num2)
+        elif action == "root":
+            result = calculations.root(num1, num2)
         else:
             return jsonify({'error': 'Invalid action'}), 400
         
